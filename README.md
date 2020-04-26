@@ -1,12 +1,17 @@
 # Tic_Tac_Toe_cpp
 
-##**Basic Tic-Tac-Toe game in C++**
+## **Basic Tic-Tac-Toe game in C++**
 
-###**pros:**
+### **pros:**
+  
   *good game
   
-###**cons:**
+### **cons:**
+  
   *minimal gameplay
+  
   *no GUI
+  
   *you always play first(to be changed in next commit)
+  
   *Rookie AI-really dumb and easy to beat
