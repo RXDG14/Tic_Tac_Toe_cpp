@@ -5,7 +5,7 @@
 	simple AI - novice difficulty
 	minimal gameplay
 	
-	made by RAKSHIT PRABHU
+	made by RAKSHIT N PRABHU
 
 /**********************************************************/
 #include<bits/stdc++.h>
