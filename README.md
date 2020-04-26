@@ -4,14 +4,14 @@
 
 ### **pros:**
   
-  *good game
+    *good game
   
 ### **cons:**
   
-  *minimal gameplay
+    *minimal gameplay
   
-  *no GUI
+    *no GUI
   
-  *you always play first(to be changed in next commit)
+    *you always play first(to be changed in next commit)
   
-  *Rookie AI-really dumb and easy to beat
+    *Rookie AI-really dumb and easy to beat
