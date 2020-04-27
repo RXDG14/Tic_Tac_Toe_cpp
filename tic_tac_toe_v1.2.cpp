@@ -1,7 +1,7 @@
 /**********************************************************
 
 	Tic_Tac_Toe in c++
-	version 1.1
+	version 1.2
 	simple AI - novice difficulty
 	minimal gameplay
 	v1.2 changes:
@@ -22,6 +22,24 @@ int i,j,co1,co2,upper=2,lower=0,ch;
 char arr[3][3];
 char x='X',o='O';
 char temp='?',f='f';
+
+
+int draw()
+{
+	int count=0;
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			if(arr[i][j]!='?'){
+				count++;
+			}
+		}
+	}
+	if(count==9){
+		cout<<"\nits a draw!\n";
+		return 1;
+	}
+}
+
 
 void player()
 {
@@ -147,7 +165,7 @@ int checkcpu1()
 
 void posfinder()			//to find position for cpu
 {
-	//srand(time(0));
+	srand(time(0));
 	int posx = (rand()%(upper - lower + 1)) + lower;		//cpu position x generator
 	int posy = (rand()%(upper - lower + 1)) + lower;		//cpu position y generator
 	if(arr[posx][posy]=='?')
@@ -161,7 +179,7 @@ void posfinder()			//to find position for cpu
 
 void posfinder1()			//to find position for cpu
 {
-	//srand(time(0));
+	srand(time(0));
 	int posx = (rand()%(upper - lower + 1)) + lower;		//cpu position x generator
 	int posy = (rand()%(upper - lower + 1)) + lower;		//cpu position y generator
 	if(arr[posx][posy]=='?')
@@ -227,16 +245,7 @@ int main()
 						cout<<"_____________________________\n";
 					}
 				}
-				int count=0;
-				for(i=0;i<3;i++){
-					for(j=0;j<3;j++){
-						if(arr[i][j]!='?'){
-							count++;
-						}
-					}
-				}
-				if(count==9)
-					{cout<<"\nits a draw!\n";}
+				if(draw()==1){return 0;};
 			}
 			case 2:{
 				cout<<"Player1 is X and Player2 is O\n\n";
@@ -253,18 +262,7 @@ int main()
 						cout<<"_____________________________\n";
 					}
 				}
-				int count=0;
-				for(i=0;i<3;i++){
-					for(j=0;j<3;j++){
-						if(arr[i][j]!='?'){
-							count++;
-						}
-					}
-				}
-				if(count==9)
-					{cout<<"\nits a draw!\n";
-					 return 0;
-					}
+				if(draw()==1){return 0;};
 			}
 			case 3:{
 				cout<<"CPU1 is X and CPU2 is O\n\n";
@@ -281,16 +279,7 @@ int main()
 						cout<<"_____________________________\n";
 					}
 				}
-				int count=0;
-				for(i=0;i<3;i++){
-					for(j=0;j<3;j++){
-						if(arr[i][j]!='?'){
-							count++;
-						}
-					}
-				}
-				if(count==9)
-					{cout<<"\nits a draw!\n";}
+				if(draw()==1){return 0;};
 			}
 	}
 			
