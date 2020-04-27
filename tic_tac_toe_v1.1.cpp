@@ -121,16 +121,12 @@ int main()
 	cout<<"You are X and the cpu is O\n\n";
 	sleep(2);
 	player();
-		if(checkplayer()==1){return 0;}
 	cout<<"_____________________________\n";
 	cpu();
-		if(checkcpu()==1){return 0;}
 	cout<<"_____________________________\n";
 	player();
-		if(checkplayer()==1){return 0;}
 	cout<<"_____________________________\n";
 	cpu();
-		if(checkcpu()==1){return 0;}
 	cout<<"_____________________________\n";
 	player();
 		if(checkplayer()==1){return 0;}
