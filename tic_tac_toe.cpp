@@ -1,15 +1,3 @@
-/**********************************************************
-
-	Tic_Tac_Toe in c++
-	version 1.3
-	simple AI - easy to moderate difficulty
-	minimal gameplay
-	v1.3 changes:
-				Difficulty improved
-	
-	made by RAKSHIT N PRABHU
-
-/**********************************************************/
 #include<bits/stdc++.h>
 #include<unistd.h>			//sleep function 
 using namespace std;
