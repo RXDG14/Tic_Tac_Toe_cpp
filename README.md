@@ -2,11 +2,4 @@
 
 ## **Basic Tic-Tac-Toe game in C++**
 
-### **Pros:**
-  
-    * Good Game
-	* Moderate Difficulty
-  
-### **Cons:**
-  
-    * No GUI
+
